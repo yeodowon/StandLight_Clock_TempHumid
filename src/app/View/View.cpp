@@ -122,7 +122,7 @@ void View::lightOff()
     char buff[30];
     sprintf(buff, "Light Off");
     lcd->WriteStringXY(0, 0, buff);
-    //lcd->backLightOff();
+    lcd->backLightOff();
 
     light1->Off();
     light2->Off();

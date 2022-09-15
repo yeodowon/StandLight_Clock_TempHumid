@@ -28,7 +28,7 @@ int main()
     Led led4(24);
     Led led5(25);
     DHT11 dht(7);
-    LCD lcd(new I2C("/dev/i2c-1", 0x27));
+    LCD lcd(new I2C("/dev/i2c-1", 0x26));
     View view(&led1, &led2, &led3, &led4, &led5, &lcd);
     TempHumidView tempHumidView(&lcd);
     ClockView clockView(&lcd);
